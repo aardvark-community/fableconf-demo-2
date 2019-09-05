@@ -1,4 +1,4 @@
-open __PROJECT_NAME__
+open FableConf
 
 open Aardium
 open Aardvark.Service

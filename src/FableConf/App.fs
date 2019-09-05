@@ -1,4 +1,4 @@
-namespace __PROJECT_NAME__
+namespace FableConf
 
 open System
 open Aardvark.Base
@@ -6,7 +6,7 @@ open Aardvark.Base.Incremental
 open Aardvark.UI
 open Aardvark.UI.Primitives
 open Aardvark.Base.Rendering
-open __PROJECT_NAME__.Model
+open FableConf.Model
 
 type Message =
     | ToggleModel

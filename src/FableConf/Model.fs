@@ -1,4 +1,4 @@
-namespace __PROJECT_NAME__.Model
+namespace FableConf.Model
 
 open System
 open Aardvark.Base
