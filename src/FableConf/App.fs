@@ -53,7 +53,15 @@ module App =
             FreeFlyController.controlledControl m.cameraState CameraMessage frustum (AttributeMap.ofList att) sg
 
             div [style "position: fixed; left: 20px; top: 20px"] [
-                button [onClick (fun _ -> ToggleModel)] [text "Toggle Model"]
+                button [onClick (fun _ -> ToggleModel)] [
+                    text "Toggle Model"
+                    Incremental.text (m.currentModel 
+                        |> Mod.map (function
+                            | Sphere -> "Switch to Box"
+                            | Box    -> "Switch to Spere"
+                           )
+                    )
+                ]
             ]
 
         ]

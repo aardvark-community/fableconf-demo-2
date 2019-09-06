@@ -18,6 +18,8 @@ let main args =
     Aardvark.Init()
     Aardium.init()
 
+    Aardvark.UI.Config.shouldPrintDOMUpdates <- true
+
     let app = new HeadlessVulkanApplication()
 
     WebPart.startServer 4321 [
